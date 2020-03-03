@@ -1,0 +1,40 @@
+.events {
+    background-color: #000000;
+}
+
+.events__location {
+    background-color: transparent;
+    position: relative;
+    padding-left: 10%;
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        width: 32px;
+        background-color: #FF781C;
+    }
+}
+
+.events__city {
+    margin-top: 40px;
+    @include font-param(26px, 31px, bold);
+}
+
+.events__country {
+    margin-top: 11px;
+    @include font-param(14px, 16px, normal);
+}
+
+.events .feed__list {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #151515;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-radius: 15px 15px 0 0;
+}

@@ -1,0 +1,58 @@
+.map-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map-section__map {
+    flex-grow: 2;
+    background-color: #666;
+}
+
+.gm-style-mtc > div,
+.gmnoprint > div,
+.gm-svpc {
+    display: none;
+}
+
+.map-section__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.map-section__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 42px;
+    height: 42px;
+
+    cursor: pointer;
+    background-color: #000000;
+    border: none;
+    border-radius: 50%;
+}
+
+.map-section__btn--events::after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "28";
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    right: -5px;
+    background: linear-gradient(0deg, #2459E2, #2459E2), #2E61E5;
+    color: #ffffff;
+    border-radius: 50%;
+    @include font-param(8px, 10px, normal);
+}

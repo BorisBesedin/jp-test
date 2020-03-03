@@ -1,0 +1,154 @@
+.feed {
+    background-color: #151515;
+}
+
+.feed__title {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 23px;
+    padding-right: 23px;
+    @include font-param(26px, 30px, bold);
+}
+
+.feed__recommendation {
+    display: none;
+    position: relative;
+    margin-bottom: 25px;
+    @include font-param(14px, 16px, normal);
+
+    & span {
+        color: #FF781C;
+    }
+}
+
+.feed__item-title {
+    @include font-param(18px, 21px, bold);
+}
+
+.feed__item-description {
+    margin-top: 5px;
+    @include font-param(14px, 16px, normal);
+}
+
+.feed__bookmark {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    height: 100%;
+    width: 40%;
+    height: 100%;
+
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(26.66deg, #FF971C 20.96%, #FF6600 104.08%);
+    transform: translateX(-100%);
+    transition: 0.3s ease-in;
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 17px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        background-image: url('../img/bookmark-white.svg');
+    }
+}
+
+.feed__item {
+    position: relative;    
+    border: 1px solid #2A2A2A;
+    transition: 0.3s ease-in;
+
+    &:hover {
+        transform: translateX(40%);
+    }
+
+    &::after {
+        display: none;
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        top: 20px;
+        right: 12px;
+        background-image: url("../../img/bookmark-icon.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.feed__item--bookmark {
+    &::after {
+        display: block;
+    }
+    
+}
+
+.feed__item--video {
+    padding-bottom: 50px;
+
+    & .feed__info {
+        top: 120px;
+    }
+}
+
+.feed__item--recommendation {
+    & .feed__info {
+        top: 80px;
+    }
+
+    & .feed__item-title {
+        @include font-param(22px, 26px, bold);
+    }
+
+    & .feed__item-description {
+        margin-top: 50px;
+    }
+
+    & .feed__recommendation {
+        display: block;
+    }
+}
+
+.feed__item--event {
+    & .feed__info {
+        top: 40px;
+    }
+
+    & .feed__item-title {
+        @include font-param(22px, 30px, bold);
+    }
+
+    & .feed__item-description {
+        margin-top: 50px;
+    }
+
+    &:first-child {
+        border-top: none;       
+    }
+}
+
+.feed__link {
+    display: block;
+    width: 100%;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #ffffff;
+}
+
+.feed__item-image {
+    opacity: 0.4;
+    border-radius: 8px;
+}
+
+.feed__info {
+    position: absolute;
+    top: 45px;
+    left: 72px;
+}
+

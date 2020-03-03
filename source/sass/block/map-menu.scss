@@ -1,0 +1,17 @@
+.map-menu__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map-menu__link {
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+    @include font-param(10px, 12px, normal);
+    color: #505050;
+
+    &:hover {
+        color: #FF781C;
+    }
+}

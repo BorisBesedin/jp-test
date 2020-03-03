@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div style="display: none">
+        <include src="build/img/sprite.svg"></include>
+    </div>
+    
+    <section class="map-section">
+        <div class="map-section__map">
+
+        </div>
+        <div class="map-section__buttons">
+            <button class="map-section__btn map-section__btn--events">
+                <span class="visually-hidden">Events</span>
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#map-ev-icon"></use>
+                </svg>
+            </button>
+            <button class="map-section__btn map-section__btn--location">
+                <span class="visually-hidden">Location</span>
+                <svg width="13" height="18" viewBox="0 0 13 18" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#map-loc-icon"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="map-section__menu map-menu wrapper">
+            <ul class="map-menu__list">
+                <li class="map-menu__item"><a href="#" class="map-menu__link">feed</a></li>
+                <li class="map-menu__item"><a href="#" class="map-menu__link">Events</a></li>
+                <li class="map-menu__item"><a href="#" class="map-menu__link">Search</a></li>
+                <li class="map-menu__item"><a href="#" class="map-menu__link">Profile</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="events feed">
+        <div class="events__location">
+            <h2 class="events__city">Amsterdam</h2>
+            <p class="events__country">Netherlands</p>
+        </div>
+        <ul class="feed__list">
+            <li class="feed__item feed__item--event">
+                <button class="feed__bookmark"></button>
+                <a href="#" class="feed__link">
+                    <img class="feed__item-image" src="./img/event-1.jpg" alt="">
+                    <div class="feed__info">
+                        <h3 class="feed__item-title">King or queen of the circle 2018</h3>
+                        <p class="feed__item-description">13 October</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="feed__item feed__item--event">
+                <button class="feed__bookmark"></button>
+                <a href="#" class="feed__link">
+                    <img class="feed__item-image" src="./img/event-2.jpg" alt="">
+                    <div class="feed__info">
+                        <h3 class="feed__item-title">Temple rock: 5 year anniversary 2018</h3>
+                        <p class="feed__item-description">12 October</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="feed__item feed__item--event">
+                <button class="feed__bookmark"></button>
+                <a href="#" class="feed__link">
+                    <img class="feed__item-image" src="./img/event-3.jpg" alt="">
+                    <div class="feed__info">
+                        <h3 class="feed__item-title">Soul Rockerz 20</h3>
+                        <p class="feed__item-description">11 October</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="feed__item feed__item--event">
+                <button class="feed__bookmark"></button>
+                <a href="#" class="feed__link">
+                    <img class="feed__item-image" src="./img/event-4.jpg" alt="">
+                    <div class="feed__info">
+                        <h3 class="feed__item-title">Rockland's 10 year hip-hop showcase</h3>
+                        <p class="feed__item-description">10 October</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBht45FBDdWcqEdh9OK_5yVn6YFDF4BUWs"></script>
+    <script src="/js/script-min.js"></script>
+    
+</body>
+</html>

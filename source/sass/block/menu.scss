@@ -1,0 +1,22 @@
+.menu__list {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.menu__item-icon {
+    fill: #ffffff;
+    opacity: 0.5;
+
+    &:hover {
+        fill: #FF781C;
+        opacity: 1;
+    }
+}
+
+.menu__link {
+    display: block;
+}

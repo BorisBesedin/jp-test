@@ -11,10 +11,15 @@
     fill: #ffffff;
     opacity: 0.5;
 
-    &:hover {
+    &:active {
         fill: #FF781C;
         opacity: 1;
     }
+}
+
+.menu__item--active .menu__item-icon {
+    fill: #FF781C;
+    opacity: 1;
 }
 
 .menu__link {

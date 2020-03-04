@@ -12,12 +12,12 @@
     </div>
 
     <main class="page-main">
-        <section class="page-header wrapper">
-            <div class="slider">
+        <section class="slider">
+            <div class="wrapper">
                 <ul class="slider__slides">
-                    <li class="slider__item slider__item--active">
+                    <li class="slider__item slider__item--active slider__item--touch">
                         <span class="slider__icon"></span>
-                        <div class="slider__description">                            
+                        <div class="slider__description">
                             <h2 class="slider__title">16 <br> new <br> events</h2>
                             <a href="./map.html" class="slider__button">open map</a>
                         </div>
@@ -25,7 +25,7 @@
                     </li>
                     <li class="slider__item">
                         <span class="slider__icon slider__icon--hottest">Hottest</span>
-                        <div class="slider__description">                            
+                        <div class="slider__description">
                             <h2 class="slider__title">Temple rock</h2>
                             <a href="" class="slider__button">Show details</a>
                         </div>
@@ -33,7 +33,7 @@
                     </li>
                     <li class="slider__item">
                         <span class="slider__icon slider__icon--nearest">Nearest</span>
-                        <div class="slider__description">  
+                        <div class="slider__description">
                             <h2 class="slider__title">Drop the beat 3</h2>
                             <a href="" class="slider__button">Show details</a>
                         </div>
@@ -52,85 +52,50 @@
                     <span class="slider__dot slider__dot--active"></span>
                     <span class="slider__dot"></span>
                     <span class="slider__dot"></span>
+                    <span class="slider__dot"></span>
                 </div>
             </div>
-
-            <div class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item menu__item--feed">
-                        <a href="#" class="menu__link">
-                            <span class="visually-hidden">feed</span>
-                            <svg width="20" height="22" viewBox="0 0 20 22" class="menu__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <use xlink:href="#feed-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="menu__item menu__item--events">
-                        <a href="#" class="menu__link">
-                            <span class="visually-hidden">events</span>
-                            <svg width="35" height="34" viewBox="0 0 35 34" class="menu__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <use xlink:href="#events-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="menu__item menu__item--search">
-                        <a href="#" class="menu__link">
-                            <span class="visually-hidden">search</span>
-                            <svg width="29" height="23" viewBox="0 0 29 23" class="menu__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <use xlink:href="#search-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="menu__item menu__item--profile">
-                        <a href="#" class="menu__link">
-                            <span class="visually-hidden">profile</span>
-                            <svg width="27" height="26" viewBox="0 0 27 26" class="menu__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <use xlink:href="#profile-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </section>
+    
         <section class="feed">
             <div class="feed__title">Feed</div>
             <ul class="feed__list">
-                <li class="feed__item">
-                    <button class="feed__bookmark"></button>
+                <li class="feed__item">                    
                     <a href="#" class="feed__link">
+                        <button class="feed__bookmark"></button>
                         <img class="feed__item-image" src="./img/feed-image-1.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Surreal soulja 2</h3>
                             <p class="feed__item-description">Cashcurt</p>
                         </div>
-                    </a>                    
+                    </a>
                 </li>
-
-                <li class="feed__item">
-                    <button class="feed__bookmark"></button>
+    
+                <li class="feed__item">                    
                     <a href="#" class="feed__link">
+                        <button class="feed__bookmark"></button>
                         <img class="feed__item-image" src="./img/feed-image-2.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">645AR - Workin ft. 10kDug...</h3>
                             <p class="feed__item-description">Beez Exclusivez</p>
                         </div>
-                    </a>                    
+                    </a>
                 </li>
-
+    
                 <li class="feed__item feed__item--video">
-                    <button class="feed__bookmark"></button>
                     <a href="#" class="feed__link">
+                        <button class="feed__bookmark"></button>
                         <img class="feed__item-image" src="./img/feed-image-3.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Final battle: Issei VS Hong <br> 10 Red Bull BC One..</h3>
                             <p class="feed__item-description">48:23</p>
                         </div>
-                    </a>                    
+                    </a>
                 </li>
-
+    
                 <li class="feed__item feed__item--recommendation feed__item--bookmark">
-                    <button class="feed__bookmark"></button>
                     <a href="#" class="feed__link">
+                        <button class="feed__bookmark"></button>
                         <p class="feed__recommendation">
                             <span>Bboy Event</span> recommends an event
                         </p>
@@ -139,46 +104,87 @@
                             <h3 class="feed__item-title">King or queen of the <br> circle 2018</h3>
                             <p class="feed__item-description">Houston, United States <br> 13 October</p>
                         </div>
-                    </a>                    
+                    </a>
                 </li>
-
+    
                 <li class="feed__item">
-                    <button class="feed__bookmark"></button>
                     <a href="#" class="feed__link">
+                        <button class="feed__bookmark"></button>
                         <img class="feed__item-image" src="./img/feed-image-5.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">kai$oundz & Lil Gucci Le...</h3>
                             <p class="feed__item-description">kai$oundz</p>
                         </div>
-                    </a>                    
+                    </a>
                 </li>
-
+    
                 <li class="feed__item">
-                    <button class="feed__bookmark"></button>
                     <a href="#" class="feed__link">
+                        <button class="feed__bookmark"></button>
                         <img class="feed__item-image" src="./img/feed-image-6.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Surreal soulja 2</h3>
                             <p class="feed__item-description">Cashcurt</p>
                         </div>
-                    </a>                    
+                    </a>
                 </li>
-
+    
                 <li class="feed__item feed__item--video">
-                    <button class="feed__bookmark"></button>
                     <a href="#" class="feed__link">
+                        <button class="feed__bookmark"></button>
                         <img class="feed__item-image" src="./img/feed-image-7.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Final battle: Issei VS Hong <br> 10 Red Bull BC One..</h3>
                             <p class="feed__item-description">48:23</p>
                         </div>
-                    </a>                    
+                    </a>
                 </li>
             </ul>
         </section>
-    </main>
     
+        <section class="menu wrapper">
+            <ul class="menu__list">
+                <li class="menu__item menu__item--feed">
+                    <a href="#" class="menu__link">
+                        <span class="visually-hidden">feed</span>
+                        <svg width="20" height="22" viewBox="0 0 20 22" class="menu__item-icon" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="#feed-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item menu__item--events">
+                    <a href="#" class="menu__link">
+                        <span class="visually-hidden">events</span>
+                        <svg width="35" height="34" viewBox="0 0 35 34" class="menu__item-icon" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="#events-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item menu__item--search">
+                    <a href="#" class="menu__link">
+                        <span class="visually-hidden">search</span>
+                        <svg width="29" height="23" viewBox="0 0 29 23" class="menu__item-icon" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="#search-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu__item menu__item--profile">
+                    <a href="#" class="menu__link">
+                        <span class="visually-hidden">profile</span>
+                        <svg width="27" height="26" viewBox="0 0 27 26" class="menu__item-icon" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="#profile-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>   
     
-    <script src="/js/script-min.js"></script>
+    <script src="./js/main-min.js"></script>
+    <script src="./js/slider-min.js"></script>
 </body>
 </html>

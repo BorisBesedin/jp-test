@@ -222,7 +222,7 @@ function mapInit() {
         marker = new google.maps.Marker({
             position: coordinates,
             map: map,
-            icon: "../img/marker-icon.png",
+            icon: "./img/marker-icon.png",
             animation: google.maps.Animation.DROP 
         });
 
@@ -230,16 +230,3 @@ function mapInit() {
 }
 
 mapInit();
-
-
-
-
-
-
-
-
-
-	
-
-
-

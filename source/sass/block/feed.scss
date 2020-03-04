@@ -1,5 +1,14 @@
 .feed {
     background-color: #151515;
+    display: none;
+}
+
+.feed--active {
+    display: block;
+}
+
+.feed__list {
+    overflow: hidden;
 }
 
 .feed__title {
@@ -74,7 +83,7 @@
         height: 15px;
         top: 20px;
         right: 12px;
-        background-image: url("../../img/bookmark-icon.svg");
+        background-image: url("../img/bookmark-icon.svg");
         background-repeat: no-repeat;
         background-size: contain;
     }

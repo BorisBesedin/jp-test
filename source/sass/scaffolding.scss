@@ -1,3 +1,27 @@
+@font-face {
+    font-family: "SF compact";
+    src: url("../fonts/SF-Compact-Display-Heavy.otf") format("otf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "SF compact";
+    src: url("../fonts/SF-Compact-Display-Regular.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/SF-Compact-Display-Semibold.otf") format("otf");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +31,7 @@
 body {
     color: #ffffff;
     background-color: #000000;
+    font-family: 'SF compact', sans-serif;
 }
 
 .page-main {

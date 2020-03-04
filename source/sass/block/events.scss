@@ -1,9 +1,30 @@
-.events {
-    background-color: #000000;
+@keyframes scroll {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
-.events__location {
-    background-color: transparent;
+.events {
+    width: 100%;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+}
+
+.events--active { 
+    animation: scroll 0.3s;
+    display: block;  
+}
+
+.events__location {    
     position: relative;
     padding-left: 10%;
 
@@ -16,6 +37,37 @@
         height: 3px;
         width: 32px;
         background-color: #FF781C;
+    }
+}
+
+.events__close {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+
+    &::after,
+    &::before {
+        position: absolute;
+        content: "";
+        top: 16px;
+        right: 8px;
+        width: 25px;
+        height: 3px;
+        background-color: #FF781C;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+
+    &::before {
+        transform: rotate(45deg);
     }
 }
 

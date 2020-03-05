@@ -60,16 +60,13 @@
         transform: translate(-50%, -50%);
         z-index: 1;
         background-image: url('../img/bookmark-white.svg');
+        background-position: center;
     }
 }
 
 .feed__item {
     position: relative;    
     border: 1px solid #2A2A2A;
-
-    // &:hover {
-    //     transform: translateX(40%);
-    // }
 
     &::after {
         display: none;

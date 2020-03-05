@@ -1,6 +1,6 @@
 (function() {
     let feedItems = document.querySelectorAll('.feed__item'),
-        touchBorder = 200;
+        touchBorder = 250;
 
     feedItems.forEach(function(item) {
         item.addEventListener('touchstart', function(evt) {

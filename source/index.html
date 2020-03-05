@@ -13,6 +13,7 @@
 
     <main class="page-main">
         <section class="slider">
+            <h2 class="visually-hidden">Slider</h2>
             <div class="wrapper">
                 <ul class="slider__slides">
                     <li class="slider__item slider__item--active slider__item--touch">
@@ -58,11 +59,12 @@
         </section>
     
         <section class="feed">
+            <h2 class="visually-hidden">Feed</h2>
             <div class="feed__title">Feed</div>
             <ul class="feed__list">
                 <li class="feed__item">                    
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <img class="feed__item-image" src="./img/feed-image-1.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Surreal soulja 2</h3>
@@ -73,7 +75,7 @@
     
                 <li class="feed__item">                    
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <img class="feed__item-image" src="./img/feed-image-2.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">645AR - Workin ft. 10kDug...</h3>
@@ -84,7 +86,7 @@
     
                 <li class="feed__item feed__item--video">
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <img class="feed__item-image" src="./img/feed-image-3.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Final battle: Issei VS Hong <br> 10 Red Bull BC One..</h3>
@@ -95,7 +97,7 @@
     
                 <li class="feed__item feed__item--recommendation feed__item--bookmark">
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <p class="feed__recommendation">
                             <span>Bboy Event</span> recommends an event
                         </p>
@@ -109,7 +111,7 @@
     
                 <li class="feed__item">
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <img class="feed__item-image" src="./img/feed-image-5.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">kai$oundz & Lil Gucci Le...</h3>
@@ -120,7 +122,7 @@
     
                 <li class="feed__item">
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <img class="feed__item-image" src="./img/feed-image-6.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Surreal soulja 2</h3>
@@ -131,7 +133,7 @@
     
                 <li class="feed__item feed__item--video">
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <img class="feed__item-image" src="./img/feed-image-7.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Final battle: Issei VS Hong <br> 10 Red Bull BC One..</h3>
@@ -143,6 +145,7 @@
         </section>
     
         <section class="menu wrapper">
+            <h2 class="visually-hidden">Menu</h2>
             <ul class="menu__list">
                 <li class="menu__item menu__item--feed">
                     <a href="#" class="menu__link">
@@ -163,7 +166,7 @@
                     </a>
                 </li>
                 <li class="menu__item menu__item--search">
-                    <a href="#" class="menu__link">
+                    <a href="#" id="search-btn" class="menu__link">
                         <span class="visually-hidden">search</span>
                         <svg width="29" height="23" viewBox="0 0 29 23" class="menu__item-icon" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -182,10 +185,50 @@
                 </li>
             </ul>
         </section>
+
+        <section class="search-popup">
+            <h2 class="visually-hidden">Search</h2>
+            <div class="wrapper">
+                <header class="search-popup__header">
+                    <button class="search-popup__header-btn search-popup__header-back">
+                        <span class="visually-hidden">Back</span>
+                    </button>
+                    <button class="search-popup__header-btn">
+                        <span class="visually-hidden">Upload</span>
+                    </button>
+                </header>
+                <div class="search-popup__search search">
+                    <div class="search__input-area">
+                        <label for="search">Search</label>
+                        <input type="search" id="search" name="search">
+                    </div>
+                    <ul class="search__menu">
+                        <li class="search__item"><a class="search__link search__link--active" href="#">All</a></li>
+                        <li class="search__item"><a class="search__link" href="#">Events</a></li>
+                        <li class="search__item"><a class="search__link" href="#">People</a></li>
+                    </ul>                    
+                </div>
+                <div class="search-popup__buttons">
+                    <button class="search-popup__cancel">Cancel</button>
+                    <button class="search-popup__confirm">Confirm</button>
+                </div>
+
+                <div class="search-popup__footer">
+                    <button class="search-popup__footer-location map-section__btn">
+                        <span class="visually-hidden">Location</span>
+                        <svg width="13" height="18" viewBox="0 0 13 18" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="#map-loc-icon"></use>
+                        </svg>
+                    </button>
+                    <button class="search-popup__footer-events">20 new events</button>
+                </div>
+            </div>
+        </section>
     </main>   
     
     <script src="./js/main-min.js"></script>
     <script src="./js/slider-min.js"></script>
     <script src="./js/bookmark-min.js"></script>
+    <script src="./js/popup-min.js"></script>
 </body>
 </html>

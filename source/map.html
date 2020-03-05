@@ -12,6 +12,7 @@
     </div>
     
     <section class="map-section">
+        <h2 class="visually-hidden">Map</h2>
         <div class="map-section__map">
 
         </div>
@@ -32,14 +33,15 @@
         <div class="map-section__menu map-menu wrapper">
             <ul class="map-menu__list">
                 <li class="map-menu__item"><a href="index.html" class="map-menu__link">Feed</a></li>
-                <li class="map-menu__item"><a href="#" class="map-menu__link">Events</a></li>
-                <li class="map-menu__item"><a href="#" class="map-menu__link">Search</a></li>
+                <li class="map-menu__item map-menu__item--events"><a href="#" class="map-menu__link">Events</a></li>
+                <li class="map-menu__item"><a href="#" id="search-btn" class="map-menu__link">Search</a></li>
                 <li class="map-menu__item"><a href="#" class="map-menu__link">Profile</a></li>
             </ul>
         </div>
     </section>
 
     <section class="events">
+        <h2 class="visually-hidden">Events</h2>
         <div class="events__container">
             <div class="events__location">
                 <h2 class="events__city">Amsterdam</h2>
@@ -49,7 +51,7 @@
             <ul class="feed__list">
                 <li class="feed__item feed__item--event">
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <img class="feed__item-image" src="./img/event-1.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">King or queen of the circle 2018</h3>
@@ -60,7 +62,7 @@
     
                 <li class="feed__item feed__item--event">
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <img class="feed__item-image" src="./img/event-2.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Temple rock: 5 year anniversary 2018</h3>
@@ -71,7 +73,7 @@
     
                 <li class="feed__item feed__item--event">
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <img class="feed__item-image" src="./img/event-3.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Soul Rockerz 20</h3>
@@ -82,7 +84,7 @@
     
                 <li class="feed__item feed__item--event">                    
                     <a href="#" class="feed__link">
-                        <button class="feed__bookmark"></button>
+                        <div class="feed__bookmark"></div>
                         <img class="feed__item-image" src="./img/event-4.jpg" alt="">
                         <div class="feed__info">
                             <h3 class="feed__item-title">Rockland's 10 year hip-hop showcase</h3>
@@ -93,10 +95,50 @@
             </ul>
         </div>
     </section>
+
+    <section class="search-popup">
+        <h2 class="visually-hidden">Search</h2>
+        <div class="wrapper">
+            <header class="search-popup__header">
+                <button class="search-popup__header-btn search-popup__header-back">
+                    <span class="visually-hidden">Back</span>
+                </button>
+                <button class="search-popup__header-btn">
+                    <span class="visually-hidden">Upload</span>
+                </button>
+            </header>
+            <div class="search-popup__search search">
+                <div class="search__input-area">
+                    <label for="search">Search</label>
+                    <input type="search" id="search" name="search">
+                </div>
+                <ul class="search__menu">
+                    <li class="search__item"><a class="search__link search__link--active" href="#">All</a></li>
+                    <li class="search__item"><a class="search__link" href="#">Events</a></li>
+                    <li class="search__item"><a class="search__link" href="#">People</a></li>
+                </ul>                    
+            </div>
+            <div class="search-popup__buttons">
+                <button class="search-popup__cancel">Cancel</button>
+                <button class="search-popup__confirm">Confirm</button>
+            </div>
+
+            <div class="search-popup__footer">
+                <button class="search-popup__footer-location map-section__btn">
+                    <span class="visually-hidden">Location</span>
+                    <svg width="13" height="18" viewBox="0 0 13 18" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <use xlink:href="#map-loc-icon"></use>
+                    </svg>
+                </button>
+                <button class="search-popup__footer-events">20 new events</button>
+            </div>
+        </div>
+    </section>
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBht45FBDdWcqEdh9OK_5yVn6YFDF4BUWs"></script>
     <script src="./js/map-min.js"></script>
     <script src="./js/googleMap-min.js"></script>   
     <script src="./js/bookmark-min.js"></script> 
+    <script src="./js/popup-min.js"></script> 
 </body>
 </html>

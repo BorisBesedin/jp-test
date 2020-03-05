@@ -47,11 +47,8 @@
     width: 40%;
     height: 100%;
 
-    border: none;
-    cursor: pointer;
     background: linear-gradient(26.66deg, #FF971C 20.96%, #FF6600 104.08%);
     transform: translateX(-100%);
-    transition: 0.3s ease-in;
 
     &:after {
         position: absolute;

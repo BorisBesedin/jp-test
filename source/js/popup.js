@@ -3,7 +3,8 @@
         searchBtn = document.querySelector('#search-btn'),
         closeBtn = document.querySelector('.search-popup__header-back');
 
-    searchBtn.addEventListener('click', () => {
+    searchBtn.addEventListener('click', function(evt) {
+        evt.preventDefault();
         popup.classList.add('search-popup--show');
     });
 

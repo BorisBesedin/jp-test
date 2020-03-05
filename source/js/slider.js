@@ -3,7 +3,7 @@
         slider = document.querySelector('.slider'),
 		slides = document.querySelectorAll('.slider__item'),
         dots = document.querySelectorAll('.slider__dot'),
-        touchBorder = 100;
+        touchBorder = 140;
 
 	function showSlide(n) {
 		slides.forEach((item) => item.classList.remove('slider__item--active'));

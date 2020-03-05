@@ -45,8 +45,11 @@
 
 .slider__item {
     display: none;
+    position: relative;
     flex-direction: column;
     justify-content: center; 
+    width: 100%;
+    height: 100%;
     
     & img {
         opacity: 0.5;
@@ -65,10 +68,6 @@
 
 .slider__item--active {    
     display: flex;
-    position: absolute;
-    top: 25px;
-    left: 0;
-    height: 90%;
 }
 
 .slider__title {

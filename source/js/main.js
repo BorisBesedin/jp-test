@@ -20,21 +20,6 @@
     feedBlock.classList.toggle('feed--active');
     scroll(feedBlock);
   });
-
-  // add to bookmarks
-
-  let events = document.querySelectorAll('.feed__item');
-
-  events.forEach(function(item) {
-    let button = item.querySelector('.feed__bookmark');
-
-    item.addEventListener('click', function(evt) {
-      evt.preventDefault();
-      if (evt.target === button) {
-        item.classList.toggle('feed__item--bookmark');
-      }
-    });
-  });
 }());
 
 

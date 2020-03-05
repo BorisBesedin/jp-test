@@ -69,11 +69,10 @@
 .feed__item {
     position: relative;    
     border: 1px solid #2A2A2A;
-    transition: 0.3s ease-in;
 
-    &:hover {
-        transform: translateX(40%);
-    }
+    // &:hover {
+    //     transform: translateX(40%);
+    // }
 
     &::after {
         display: none;
@@ -92,8 +91,11 @@
 .feed__item--bookmark {
     &::after {
         display: block;
-    }
-    
+    }    
+}
+
+.feed__item--untouch {
+    transition: 0.5s;
 }
 
 .feed__item--video {
